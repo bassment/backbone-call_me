@@ -1,0 +1,6 @@
+Person.create(name: 'Emma', phone: '+1-202-555-0108')
+Person.create(name: 'Léa', phone: '+44 7700 900562')
+Person.create(name: 'Chloé', phone: '+1-512-555-0157')
+Person.create(name: 'Manon', phone: '+1-808-555-0145')
+Person.create(name: 'Inès', phone: '+1-202-555-0165')
+Person.create(name: 'Lola ', phone: '07700 900562')
