@@ -1,7 +1,7 @@
 <td><%= @person.get('name') %></td>
 <td><%= @person.get('phone') %></td>
 <td>
-<% if @person.get('winner'): %>
-    <span class="winner">CALL ME!</span>
+<% if @person.get('call'): %>
+    <span class="call_me">CALL ME!!!</span>
 <% end %>
 </td>

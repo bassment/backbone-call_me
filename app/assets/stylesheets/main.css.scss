@@ -1,6 +1,7 @@
 $purple: #CC33FF;
 $indigo: #2E0854;
 $magenta3: #CD00CD;
+$gainsboro: #DCDCDC;
 
 body {
     background-image: image-url("grungy-greenish-background.jpg");
@@ -9,10 +10,11 @@ body {
 h1 {
   text-align: center;
   padding-bottom: 10px;
-  padding-top: 20px;
+  color: $purple;
 }
 table {
   border-top: 2px solid $purple;
+  margin-top: 30px;
 }
 .purple {
   color: $purple;
@@ -37,4 +39,18 @@ table {
 }
 .button-center {
     text-align: center;
+}
+.call_me {
+  color: $gainsboro;
+}
+.highlight {
+  color: red;
+  font-weight: bold;
+}
+thead > tr > td {
+  font-size: 20px;
+}
+tbody > tr > td:first-child {
+  font_family: "Comic Sans MS", cursive, sans-serif;
+  font-weight: bold;
 }

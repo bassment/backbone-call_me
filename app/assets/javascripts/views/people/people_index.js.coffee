@@ -4,6 +4,7 @@ class CallMe.Views.PeopleIndex extends Backbone.View
   
   events:
     'submit #new_person': 'createPerson'
+    'click #call': 'selectPerson'
 
   initialize: ->
     @collection.on('reset', @render, this)
@@ -20,8 +21,16 @@ class CallMe.Views.PeopleIndex extends Backbone.View
     
   createPerson: (event) ->
     event.preventDefault()
-    @collection.create
-      name: $('#new_person_name').val()
+    attributes = 
+      name: $('#new_person_name').val(),
       phone: $('#new_person_phone').val()
-    $('#new_person')[0].reset()
-    $('#new_person')[1].reset()
+    @collection.create attributes,
+      wait: true
+      success: -> 
+        $('#new_person')[0].reset()
+        $('#new_person')[1].reset()
+      error: -> alert "Please fill in BOTH fields!"
+      
+  selectPerson: (event) ->
+    event.preventDefault()
+    @collection.selectPerson()
