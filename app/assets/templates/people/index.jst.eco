@@ -1,1 +1,25 @@
-<h1>Call Me</h1>
+<div class ="container vertical-center">
+
+  <div class="col-md-6">
+  
+    <h1>Call me, Valeria!</h1>
+    
+    <table class="table">
+      <tbody>
+        <tr class="purple">
+          <td><b>Name</b></td>
+          <td><b>Phone Number</b></td>
+          <td><b>Who to Call?</b></td>
+        </tr>
+        <% for person in @people.models: %>
+          <tr>
+            <td><%= person.get('name') %></td>
+            <td><%= person.get('phone') %></td>
+            <td><%= person.get('call') %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+  
+</div>

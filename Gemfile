@@ -39,3 +39,4 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'backbone-on-rails', '~> 1.1.2.1'
+gem 'bootstrap-sass', '~> 3.3.4.1'
