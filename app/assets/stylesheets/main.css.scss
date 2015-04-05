@@ -1,4 +1,5 @@
 $purple: #CC33FF;
+$indigo: #2E0854;
 
 body {
     background-image: image-url("grungy-greenish-background.jpg");
@@ -21,4 +22,9 @@ table {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+.btn-success {
+    border-radius: 0px;
+    background-color: $purple;
+    border-color: $indigo;
 }
