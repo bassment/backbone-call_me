@@ -1,5 +1,6 @@
 $purple: #CC33FF;
 $indigo: #2E0854;
+$magenta3: #CD00CD;
 
 body {
     background-image: image-url("grungy-greenish-background.jpg");
@@ -8,6 +9,7 @@ body {
 h1 {
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 20px;
 }
 table {
   border-top: 2px solid $purple;
@@ -24,7 +26,15 @@ table {
   flex-direction: column;
 }
 .btn-success {
+    width: 50%;
     border-radius: 0px;
-    background-color: $purple;
+    background-color: $magenta3;
     border-color: $indigo;
+}
+.btn-success:hover, .btn-success:focus {
+  background-color: $purple;
+  border-color: $indigo
+}
+.button-center {
+    text-align: center;
 }
